@@ -13,6 +13,12 @@ Flutter, C, SQL, R, CUDA C++
 
 ## Optimize 
 
+C++ 파일을 컴파일할 때 자동으로 최적화를 해주는 옵션을 끄고, 기본적인 2D convolution 프로그램 [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/systemprogramming_optimize/proj.c)을 최적화하는 과제였다.
+
+Loop unrolling, 조건문 순서 수정 등을 사용하는 과제였지만, 
+
+당시 내가 사용하던 CPU와 서버의 CPU가 달라, 속도 향상에 차이가 있었던 것이다.
+
 # C++
 
 ## Vision [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%EA%B0%9C%EB%A1%A0/hw2)
