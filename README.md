@@ -11,25 +11,25 @@ Flutter, C, SQL, R, CUDA C++
 
 # C
 
-## Optimize
+## Optimize 
 
 # C++
 
-## Vision
+## Vision [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%EA%B0%9C%EB%A1%A0/hw2)
 
-## Snake_Game_Player
+## Snake_Game_Player [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
 
-## DCCP
+## DCCP [#](https://github.com/sadgabriel/DCCP)
 
 # 인공지능
 
 ## 강화학습
 
-### PPO를 이용한 Tstarbot 실험
+### PPO를 이용한 Tstarbot 실험 [#](https://github.com/ehekafhr/TStarBot1)
 
 ## 딥 러닝
 
-### Numpy를 이용한 NN과 CNN 구현 ![#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EB%94%A5%EB%9F%AC%EB%8B%9D%EA%B0%9C%EB%A1%A0/PA1_201911050_%EB%8F%84%EB%8B%B4%EB%A1%9D)
+### Numpy를 이용한 NN과 CNN 구현 [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EB%94%A5%EB%9F%AC%EB%8B%9D%EA%B0%9C%EB%A1%A0/PA1_201911050_%EB%8F%84%EB%8B%B4%EB%A1%9D)
 
 Pytorch, Tensorflow 등의 딥러닝 프레임워크를 사용하지 않고, Numpy를 이용하여 행렬곱을 이용해 Forward, Backward propagation을 구현해 NN과 CNN을 구현하였다.
 
@@ -37,7 +37,7 @@ Pytorch, Tensorflow 등의 딥러닝 프레임워크를 사용하지 않고, Num
 
 MNIST dataset에 대해 93-97% 정도의 정확도가 나왔다. 전처리로 Histogram normalization 등을 사용해 보았지만, 유의미할 정도의 정확도 향상을 보지는 못했다.
 
-### Flutter를 이용한 앱 개발
+### Flutter를 이용한 앱 개발 [#](https://github.com/ehekafhr/od_ugrp_ehekafhr)
 
 ### 인공지능경진대회 참여(언어 모델)
 
