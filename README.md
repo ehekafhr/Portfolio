@@ -7,7 +7,7 @@ C++, Python
 
 # 사용 가능 언어
 
-Flutter, C, SQL, R
+Flutter, C, SQL, R, CUDA C++
 
 # 학력
 
