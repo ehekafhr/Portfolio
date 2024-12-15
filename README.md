@@ -42,12 +42,12 @@ MNIST dataset에 대해 93-97% 정도의 정확도가 나왔다. 전처리로 Hi
 ### 인공지능경진대회 참여(언어 모델)
 
 법률 문서 요약 
-[대회참가인증서.pdf](https://github.com/user-attachments/files/18141398/default.pdf)
+[대회참가인증서](https://github.com/user-attachments/files/18141398/default.pdf)
 
 
 # 학력
 
-DGIST 기초학부(2019-2023), 컴퓨터공학 전공 인정[붙임. 전공 인정 확인서(도담록 201911050).pdf](https://github.com/user-attachments/files/18141400/201911050.pdf)
+DGIST 기초학부(2019-2023), 컴퓨터공학 전공 인정[전공 인정 확인서](https://github.com/user-attachments/files/18141400/201911050.pdf)
 
 # 자격증
 
