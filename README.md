@@ -1,8 +1,17 @@
 # Portfolio
 Hello, my name is Damrok Do.
 
+# Python
 
+# C++
 
-# Deep Learning
+# AI
+
+## Reinforcement Learning
+
+## Deep Learning
+
+# Qualifications
 
 # Contact
+ehekafhr@naver.com
