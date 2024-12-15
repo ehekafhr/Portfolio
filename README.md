@@ -29,7 +29,7 @@ Flutter, C, SQL, R, CUDA C++
 
 ## 딥 러닝
 
-### Numpy를 이용한 NN과 CNN 구현
+### Numpy를 이용한 NN과 CNN 구현 ![#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EB%94%A5%EB%9F%AC%EB%8B%9D%EA%B0%9C%EB%A1%A0/PA1_201911050_%EB%8F%84%EB%8B%B4%EB%A1%9D)
 
 Pytorch, Tensorflow 등의 딥러닝 프레임워크를 사용하지 않고, Numpy를 이용하여 행렬곱을 이용해 Forward, Backward propagation을 구현해 NN과 CNN을 구현하였다.
 
