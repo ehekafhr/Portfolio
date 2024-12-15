@@ -1,11 +1,29 @@
 # 포트폴리오
 안녕하세요, 도담록입니다.
 
-# Python
+# 주 언어
+
+C++, Python
+
+# 사용 가능 언어
+
+Flutter, C, SQL, R
+
+# 학력
+
+DGIST 기초학부(2019-2023)
 
 # C
 
+## Optimize
+
 # C++
+
+## Vision
+
+## Snake_Game_Player
+
+## DCCP
 
 # 인공지능
 
