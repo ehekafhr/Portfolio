@@ -21,7 +21,7 @@ OOP를 처음 배우면서 만든 프로그램이다.
 
 # C
 
-## Optimize 
+## 2D Convolucion Optimize 
 
 C++ 파일을 컴파일할 때 자동으로 최적화를 해주는 옵션을 끄고, 기본적인 2D convolution 프로그램 [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/systemprogramming_optimize/proj.c)을 최적화하는 과제였다.
 
