@@ -31,7 +31,7 @@ CUDA C++: GPU 프로그래밍
 	
 ## C++
 
-### 1.Snake_Game_Player 
+### 1. Snake_Game_Player 
 
 
 [프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
@@ -40,7 +40,7 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 ---
 
-### 2.DCCP(작곡 프로그램) 
+### 2. DCCP(작곡 프로그램) 
 
 
 [프로젝트 링크](https://github.com/sadgabriel/DCCP)
@@ -87,7 +87,7 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 ### 딥 러닝
 
-#### 1.인공지능경진대회 참여(언어 모델)
+#### 1. 인공지능경진대회 참여(언어 모델)
 
 법률 문서 요약 부문에서, 학습의 효율성을 높이기 위해 데이터 전처리를 하는 역할을 맡았습니다.
 
@@ -97,7 +97,7 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 ---
 
-#### 2.Flutter를 이용한 상점에서의 Object Detection 앱 개발 
+#### 2. Flutter를 이용한 상점에서의 Object Detection 앱 개발 
 
 [프로젝트 링크](https://github.com/ehekafhr/od_ugrp_ehekafhr)
 
