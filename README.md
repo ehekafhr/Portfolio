@@ -26,22 +26,21 @@ CUDA C++: GPU 프로그래밍
 ---
 
 # 프로젝트
-
----
 	
 ## C++
 
----
-	
 ### Snake_Game_Player 
+
+---
 
 [프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
 	
 OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복을 피하지 못하고 가독성이 떨어지는, 함수와 모듈화의 중요성을 알게 된 프로젝트입니다.
 
----
 	
 ### DCCP(작곡 프로그램) 
+
+---
 
 [프로젝트링크](https://github.com/sadgabriel/DCCP)
 
@@ -53,11 +52,11 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 팀원들끼리 잦게 주기적 회의를 하여 이 문제는 해결되었고, 이후로도 다른 프로젝트들에서도 진행 상황 등에 대한 이야기를 나눌 수 있는 회의를 주도적으로 제안하는 습관이 만들어졌습니다.
 
----
 
 ## C
 
 ---
+
 ### 2D Convolucion Optimize  
 
 [프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/systemprogramming_optimize)
