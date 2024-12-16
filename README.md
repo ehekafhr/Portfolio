@@ -9,23 +9,27 @@ C++, Python
 
 Flutter, C, SQL, R, CUDA C++
 
+
+# C++
+
+## Snake_Game_Player [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
+
+OOP를 처음 배우면서 만든 프로그램이다. 
+
+## DCCP [#](https://github.com/sadgabriel/DCCP)
+
+
 # C
 
 ## Optimize 
 
 C++ 파일을 컴파일할 때 자동으로 최적화를 해주는 옵션을 끄고, 기본적인 2D convolution 프로그램 [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/systemprogramming_optimize/proj.c)을 최적화하는 과제였다.
 
-Loop unrolling, 조건문 순서 수정 등을 사용하는 과제였지만, 
+Loop unrolling, 조건문 순서 수정 등을 사용하는 과제였지만, CPU의 캐시 지역성을 생각해 알고리즘을 다시 설계하여, 하이퍼파라미터에 따라 프로그램의 속도가 달라짐을 확인하였다.
 
-당시 내가 사용하던 CPU와 서버의 CPU가 달라, 속도 향상에 차이가 있었던 것이다.
+이 때, 나의 로컬 컴퓨터의 CPU와 서버 CPU가 달랐기 때문에, 캐시 구조 또한 달랐고 따라서 최고의 효율을 보이는 하이퍼파라미터도 다른 값이 나오는 것을 확인하였다.
 
-# C++
-
-## Vision [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%EA%B0%9C%EB%A1%A0/hw2)
-
-## Snake_Game_Player [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
-
-## DCCP [#](https://github.com/sadgabriel/DCCP)
+후에 CUDA를 공부하면서도, GPU의 구조에 따라 사용하는 최적의 알고리즘이 다르다는 것을 배웠다.
 
 # 인공지능
 
