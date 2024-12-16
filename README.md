@@ -29,11 +29,15 @@ CUDA C++: GPU 프로그래밍
 	
 ## C++
 	
-### Snake_Game_Player [링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
+### Snake_Game_Player 
+
+[프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
 	
 OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복을 피하지 못하고 가독성이 떨어지는, 함수와 모듈화의 중요성을 알게 된 프로젝트입니다.
 	
-### DCCP(작곡 프로그램) [링크](https://github.com/sadgabriel/DCCP)
+### DCCP(작곡 프로그램) 
+
+[프로젝트링크](https://github.com/sadgabriel/DCCP)
 
 팀 미팅을 주도적으로 이끌고, 클래스 구조를 설계하였습니다.
 
@@ -45,7 +49,9 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 ## C
 
-### 2D Convolucion Optimize  [링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/systemprogramming_optimize)
+### 2D Convolucion Optimize  
+
+[프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/systemprogramming_optimize)
 
 기본적인 2D convolution 프로그램 (proj.c)을 최적화하는 과제를 진행하였습니다.
 
@@ -57,7 +63,9 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 
 ### 강화학습
 
-#### 스타크래프트 2 인공지능 실험  [링크](https://github.com/ehekafhr/TStarBot1)
+#### 스타크래프트 2 인공지능 실험  
+
+[프로젝트 링크](https://github.com/ehekafhr/TStarBot1)
 
 스타크래프트2의 PPO를 이용해 학습된 인공지능 중 하나인 Tstarbot1을 변형하여 APM 제약 조건을 점진적으로 추가하여 재학습시키는 방식과 즉시 제약을 적용시켜 재학습시키는 방식의 성능을 비교한 실험입니다.
 
@@ -76,7 +84,9 @@ OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복
 [대회참가인증서](https://github.com/user-attachments/files/18141398/default.pdf)
 
 
-#### Flutter를 이용한 상점에서의 Object Detection 앱 개발 [#](https://github.com/ehekafhr/od_ugrp_ehekafhr)
+#### Flutter를 이용한 상점에서의 Object Detection 앱 개발 
+
+[프로젝트 링크](https://github.com/ehekafhr/od_ugrp_ehekafhr)
 
 Yolov5 모델을 이용하여 데이터 수집, 전이학습, Torchlite 경량화, Flutter로 휴대폰 어플리케이션에 이식을 진행한 팀 프로젝트입니다.
 
