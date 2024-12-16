@@ -14,14 +14,37 @@ Flutter, C, SQL, R, CUDA C++
 
 ## Snake_Game_Player [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
 
-OOP를 처음 배우면서 만든 프로그램이다. 
+OOP를 C++로 처음 배우면서 만든 프로그램이다. 
+
+코드의 가독성, 효율 등에 대하여 고민하지 않았고, OOP를 제대로 사용하지도 않았다.
+
+함수를 잘 설계해서 사용하는 대신, 코드 자체를 복사, 붙여넣기하여 끔찍한 코드가 완성되었다.
+
+![image](https://github.com/user-attachments/assets/282f7445-d17e-427c-b7fe-219ffc436c10)
+
+이 블럭은 인수만 조금씩 바뀐 상태로 16번 가량 사용된다. 이와 비슷하게 조금씩 수정되어 반복되는 코드 블럭들이 넘치는 코드이다.
+
+따라서 코드를 수정하기 위해서는 16번의 작업이 필요했다.
+
+프로그램은 훌륭하게 돌아갔지만, 이러한 고칠 수도, 알아볼 수도 없는 코드를 만들지 않도록 노력하는 계기가 되었다.
 
 ## DCCP [#](https://github.com/sadgabriel/DCCP)
 
+첫 팀 프로젝트를 하면서 만든 작곡 프로그램이다.
+
+프로젝트에서 주도적으로 미팅을 이끌었고, 클래스 구조를 계획하였다.
+
+![image](https://github.com/user-attachments/assets/7df52a8b-4c67-4c1b-830b-8fb23259fd36)
+
+프로젝트의 클래스 다이어그램이다. 여러 명이 동시에 작업을 하면서 충돌이 생기지 않도록 네이밍 컨벤션, 코딩 스타일에 대한 합의도 진행하였다.
+
+프로젝트에서 팀원 간의 소통의 중요성을 느낀 프로젝트였다. 처음에는 팀원들끼리 무엇을 얼마나 진행했고, 어디가 문제인지 공유가 되지 않아 프로젝트 진행이 굼떴다.
+
+팀원들끼리 잦게 주기적 회의를 하여 이 문제는 해결되었고, 이후로도 다른 프로젝트들에서도 진행 상황 등에 대한 이야기를 나눌 수 있는 회의를 주도적으로 제안하는 습관이 생겼다.
 
 # C
 
-## 2D Convolucion Optimize 
+## 2D Convolucion Optimize  [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/tree/main/systemprogramming_optimize)
 
 C++ 파일을 컴파일할 때 자동으로 최적화를 해주는 옵션을 끄고, 기본적인 2D convolution 프로그램 [#](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/systemprogramming_optimize/proj.c)을 최적화하는 과제였다.
 
@@ -69,6 +92,9 @@ DGIST 기초학부(2019-2023) (컴퓨터공학 전공 인정)
 -SQLD
 
 -TOEIC 835
+
+# [BOJ](https://www.acmicpc.net/user/ehekafhr)
+
 
 # 연락
 ehekafhr@naver.com
