@@ -7,21 +7,13 @@
 ---
 # 주 언어
 
-C: 시스템 프로그래밍
-
-C++: 객체지향 프로그래밍
-
-Python: 데이터 분석, 인공지능
+C, C++, Python
 
 ---
 
 # 사용 가능 언어
 
-Flutter: 모바일 앱 개발
-
-SQL: 데이터베이스 서례, 쿼리 작성
-
-CUDA C++: GPU 프로그래밍
+Java, Flutter, SQL, CUDA C++
 
 ---
 
@@ -31,16 +23,9 @@ CUDA C++: GPU 프로그래밍
 	
 ## C++
 
-### 1. Snake_Game_Player 
-
-
-[프로젝트 링크](https://github.com/ehekafhr/DGIST_ASSIGNMENTS/blob/main/HW4/MyPlayer.cpp)
-	
-OOP를 C++로 처음 배우면서 만든 프로그램입니다. 코드의 중복을 피하지 못하고 가독성이 떨어지는, 함수와 모듈화의 중요성을 알게 된 프로젝트입니다.
-
 ---
 
-### 2. DCCP(작곡 프로그램) 
+###  DCCP(작곡 프로그램) 
 
 
 [프로젝트 링크](https://github.com/sadgabriel/DCCP)
