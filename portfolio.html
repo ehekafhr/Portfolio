@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도담록 — AI/ML Engineer 포트폴리오</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAFBFC;
+  --ink:#16232B;
+  --muted:#5A6B76;
+  --line:#DCE3E8;
+  --card:#FFFFFF;
+  --c1:#0F766E; --c1-soft:#E7F4F2;
+  --c2:#4F46E5; --c2-soft:#EDECFC;
+  --c3:#BE185D; --c3-soft:#FBEAF1;
+  --c4:#B45309; --c4-soft:#F9F0E3;
+  --mono:'JetBrains Mono', monospace;
+  --sans:'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.72;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:880px;margin:0 auto;padding:0 28px}
+
+.tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.04em;
+  padding:3px 10px;border-radius:3px;
+  color:#fff;white-space:nowrap;
+}
+.tag .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85)}
+
+
+.bbox{position:relative}
+.bbox::before,.bbox::after{
+  content:"";position:absolute;width:22px;height:22px;pointer-events:none;
+}
+.bbox::before{top:-1px;left:-1px;border-top:2px solid var(--bc,var(--ink));border-left:2px solid var(--bc,var(--ink))}
+.bbox::after{bottom:-1px;right:-1px;border-bottom:2px solid var(--bc,var(--ink));border-right:2px solid var(--bc,var(--ink))}
+
+header{padding:88px 0 56px}
+.id-box{
+  --bc:var(--ink);
+  border:1px solid var(--line);
+  background:var(--card);
+  padding:44px 44px 40px;
+}
+.id-box .tag{position:absolute;top:-13px;left:20px;background:var(--ink)}
+.name{font-size:46px;font-weight:800;letter-spacing:-.03em;line-height:1.15}
+.role{font-family:var(--mono);font-size:14px;color:var(--muted);margin-top:6px;letter-spacing:.02em}
+.contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px;color:var(--muted)}
+.contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.contact a:hover,.contact a:focus-visible{border-bottom-color:var(--ink)}
+.intro{margin-top:26px;padding-top:24px;border-top:1px solid var(--line);font-size:16.5px}
+.intro strong{font-weight:700}
+.intro p+p{margin-top:10px}
+
+
+section{padding:30px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.sec-head h2{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.sec-head .cnt{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+
+.skills{display:grid;grid-template-columns:150px 1fr;gap:12px 20px;font-size:15px}
+.skills dt{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--muted);padding-top:3px;letter-spacing:.02em}
+.skills dd{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  font-size:13.5px;font-weight:500;
+  background:var(--card);border:1px solid var(--line);
+  padding:4px 12px;border-radius:4px;
+}
+
+
+.proj{
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:40px 44px 36px;
+  margin-bottom:52px;
+}
+.proj .tag{position:absolute;top:-13px;left:20px}
+.proj[data-cls="restoration"]{--bc:var(--c1)} .proj[data-cls="restoration"] .tag{background:var(--c1)}
+.proj[data-cls="detection"]{--bc:var(--c2)} .proj[data-cls="detection"] .tag{background:var(--c2)}
+.proj[data-cls="segmentation"]{--bc:var(--c3)} .proj[data-cls="segmentation"] .tag{background:var(--c3)}
+.proj[data-cls="reinforcement"]{--bc:var(--c4)} .proj[data-cls="reinforcement"] .tag{background:var(--c4)}
+
+.proj h3{font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.35;padding-right:20px}
+.meta{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.meta a{color:var(--muted)}
+.meta a:hover,.meta a:focus-visible{color:var(--ink)}
+.overview{margin-top:18px;font-size:15.5px;color:#33434D}
+
+/* metric strip */
+.metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.metric{
+  border:1px solid var(--line);border-left:3px solid var(--bc);
+  background:var(--bg);
+  padding:9px 14px;min-width:130px;
+}
+.metric .v{font-family:var(--mono);font-size:17px;font-weight:700;color:var(--bc);letter-spacing:-.01em}
+.metric .k{font-size:12px;color:var(--muted);margin-top:1px}
+
+.block{margin-top:26px}
+.block h4{
+  font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--bc);
+  text-transform:uppercase;font-family:var(--mono);
+  display:flex;align-items:center;gap:10px;
+}
+.block h4::after{content:"";flex:1;height:1px;background:var(--line)}
+.block ul{margin-top:12px;list-style:none}
+.block li{
+  position:relative;padding-left:20px;margin-bottom:11px;
+  font-size:15.5px;color:#2A3942;
+}
+.block li::before{
+  content:"";position:absolute;left:2px;top:11px;
+  width:7px;height:7px;border:1.5px solid var(--bc);border-radius:1px;
+}
+.block li strong{font-weight:700;color:var(--ink)}
+.block li .num{font-family:var(--mono);font-weight:700;color:var(--bc);font-size:14.5px}
+
+.role-line{
+  margin-top:20px;padding:12px 16px;
+  background:color-mix(in srgb, var(--bc) 6%, white);
+  border-radius:4px;font-size:15px;
+}
+.role-line b{font-weight:700}
+
+/* ---------- education ---------- */
+.edu{list-style:none}
+.edu li{
+  display:flex;flex-wrap:wrap;gap:4px 20px;align-items:baseline;
+  padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px;
+}
+.edu li:first-child{border-top:1px solid var(--line)}
+.edu .when{font-family:var(--mono);font-size:12.5px;color:var(--muted);min-width:170px}
+.edu .what{font-weight:600}
+.edu .note{color:var(--muted);font-size:14px}
+
+.placeholder{color:#B0672A;background:#FDF3E7;padding:0 5px;border-radius:3px;font-size:.92em}
+
+footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+@media (max-width:640px){
+  header{padding:56px 0 36px}
+  .id-box,.proj{padding:32px 24px 30px}
+  .name{font-size:34px}
+  .skills{grid-template-columns:1fr;gap:6px}
+  .skills dt{padding-top:10px}
+}
+@media print{
+  body{background:#fff;font-size:13px}
+  header{padding:24px 0 20px}
+  .proj{break-inside:avoid;margin-bottom:24px;padding:26px 28px}
+  .id-box{padding:26px 28px}
+  a{text-decoration:none;color:inherit}
+  .metrics .metric{padding:6px 10px}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="id-box bbox">
+    <span class="tag"><span class="dot"></span>cls: ai_ml_engineer&nbsp;·&nbsp;conf 0.99</span>
+    <h1 class="name">도담록</h1>
+    <p class="role">AI/ML Engineer — Computer Vision · Reinforcement Learning</p>
+    <div class="contact">
+      <span>GitHub&nbsp;·&nbsp;<a href="https://github.com/ehekafhr">github.com/ehekafhr</a></span>
+      <span>Email&nbsp;·&nbsp;<span class="placeholder">ehekafhr@naver.com</span></span>
+      <span>학력&nbsp;·&nbsp;DGIST <span class="placeholder">기초학부(컴퓨터공학 전공인증)</span></span>
+    </div>
+    <div class="intro">
+      <p>문제 상황과 데이터 특성을 먼저 이해하고, 그에 맞는 베이스 모델을 선정한 뒤 <strong>과적합을 통제하며 도메인에 맞게 파인튜닝</strong>하는 과정을 즐깁니다. "왜 이 모델인가, 왜 이 학습 전략인가"에 대해 가설을 세우고, 실험으로 검증하여 의사결정하는 것을 원칙으로 합니다.</p>
+      <p>컴퓨터 비전(Object Detection · Segmentation)에 대한 깊은 이해를 바탕으로, 모델을 서버·DB와 연결해 <strong>동작하는 시스템으로 완성</strong>한 경험이 있으며, 강화학습 에이전트와 NLP 모델의 파인튜닝도 가능합니다.</p>
+    </div>
+  </div>
+</header>
+
+<section class="wrap" id="skills">
+  <div class="sec-head"><h2>기술 스택</h2><span class="cnt"></span></div>
+  <dl class="skills">
+    <dt>Language / DL</dt>
+    <dd><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">TensorFlow</span></dd>
+    <dt>Computer Vision</dt>
+    <dd><span class="chip">MMDetection</span><span class="chip">SAM-2</span><span class="chip">YOLOv8</span><span class="chip">WBF Ensemble</span><span class="chip">OpenCV</span></dd>
+    <dt>RL / LLM</dt>
+    <dd><span class="chip">PPO</span><span class="chip">PySC2 환경 커스터마이징</span><span class="chip">HyperCLOVA X (Clova Studio)</span></dd>
+    <dt>Backend / Infra</dt>
+    <dd><span class="chip">FastAPI</span><span class="chip">MongoDB</span><span class="chip">AWS S3</span></dd>
+    <dt>협업 / 실험 관리</dt>
+    <dd><span class="chip">Wandb</span><span class="chip">Git / GitHub</span><span class="chip">Notion</span></dd>
+  </dl>
+</section>
+
+<section class="wrap" id="projects">
+  <div class="sec-head"><h2>프로젝트</h2><span class="cnt">
+  <!-- P1. CCTV Final Project -->
+  <article class="proj bbox" data-cls="restoration">
+    <span class="tag"><span class="dot"></span>cls: system · restoration+detection</span>
+    <h3>군 경계지역 CCTV 영상 품질 개선을 통한 지능형 분석 고도화</h3>
+    <div class="meta">
+      <span>부스트캠프 AI Tech 8기 최종 프로젝트</span>
+      <span>5인 팀</span>
+      <a href="https://github.com/boostcampaitech8/pro-cv-finalproject-cv-10">GitHub ↗</a>
+      <a href="https://www.youtube.com/watch?v=n9__Jga_j58">시연 영상 ↗</a>
+    </div>
+    <p class="overview">
+      군 경계 지역 CCTV의 화질 열화(해무·안개 등)를 엣지 디바이스에서 실시간 복원하고, 객체 탐지 → HyperCLOVA X 기반 보고서 생성까지 이어지는 파이프라인을 구축해 <strong>군 경계 감시 업무의 자동화</strong>를 지향한 프로젝트입니다. 엣지 디바이스(Jetson Orin Nano / Google Coral) — 메인 서버 — 웹 서버로 구성된 End-to-End 시스템을 완성했습니다.
+    </p>
+    <div class="metrics">
+      <div class="metric"><div class="v">0.313 → 0.390</div><div class="k">복원 적용 후 탐지 mAP50 (팀 성과)</div></div>
+      <div class="metric"><div class="v">2종 LLM 연동</div><div class="k">HCX-005 캡션 · HCX-007 구조화</div></div>
+      <div class="metric"><div class="v">47K+ 이미지</div><div class="k">수집·정제한 학습 데이터</div></div>
+    </div>
+    <div class="role-line"><b>담당 역할</b> — 데이터 수집 및 EDA · 메인 서버 구현 · DB 설계 및 구현 · DB와 Clova Studio의 메인 서버 연동</div>
+    <div class="block">
+      <h4>주요 기여</h4>
+      <ul>
+        <li><strong>메인 서버 구축(FastAPI)</strong> — 엣지 디바이스의 탐지 결과와 이미지를 수신해 AWS S3에 저장하고, LLM 보고서 생성과 웹 서버 조회 요청을 중계하는 메인 서버를 구현했습니다. 엣지 디바이스의 Heartbeat를 수신해 기기 연결 상태를 추적하는 로직도 포함했습니다.</li>
+        <li><strong>DB 스키마 설계 및 구현(MongoDB)</strong> — 촬영 시각·위치·S3 경로·탐지 메타데이터·LLM 캡션·구조화 보고서를 담는 탐지 결과 스키마와, 엣지 디바이스 상태 스키마를 설계해 과거 탐지 기록 열람 기능의 기반을 만들었습니다.</li>
+        <li><strong>HyperCLOVA X 파이프라인 연동</strong> — 탐지 이미지를 <span class="num">HCX-005</span>로 분석해 상황 캡션을 생성하고, 이를 <span class="num">HCX-007</span>로 구조화된 JSON 보고서로 변환하는 2단계 LLM 파이프라인을 메인 서버·DB와 연동했습니다.</li>
+        <li><strong>데이터 수집 및 EDA</strong> — AI-Hub 군 경계 작전 환경 데이터(약 <span class="num">47,000</span>장) 등 6종 데이터셋을 수집·분석하고, 클래스 분포를 유지하는 Group-Stratified Split(8:2)으로 학습/평가 데이터를 구성했습니다.</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h4>시스템 개요 (팀)</h4>
+      <ul>w
+        <li>BioIR(Teacher) → OneRestore(Student, 약 598만 파라미터) <strong>feature 기반 지식 증류</strong>로 경량 복원 모델을 만들고 TensorRT로 엣지 배포 — 복원 적용 시 YOLOv8n 탐지 mAP50이 <span class="num">0.313 → 0.390</span>으로 향상되었습니다.</li>
+        <li>React 웹에서 실시간 객체 식별 알림, AI 보고서, 과거 감시 기록 열람을 제공합니다.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- P2. Object Detection -->
+  <article class="proj bbox" data-cls="detection">
+    <span class="tag"><span class="dot"></span>cls: object_detection</span>
+    <h3>재활용 품목 분류를 위한 Object Detection</h3>
+    <div class="meta">
+      <span>부스트캠프 AI Tech 8기</span>
+      <span>5인 팀 · 팀장</span>
+      <a href="https://github.com/ehekafhr/pro-cv-objectdetection-cv-10">GitHub ↗</a>
+    </div>
+    <p class="overview">
+      재활용 쓰레기가 포함된 이미지에서 객체별 Bounding Box와 품목 Label을 예측하는 대회 프로젝트입니다. 평가지표는 mAP50이며, 외부 데이터 없이 COCO 사전학습 가중치만 사용할 수 있는 제약이 있었습니다.
+    </p>
+    <div class="metrics">
+      <div class="metric"><div class="v">TOP 5</div><div class="k">리더보드 Public · Private 최종 5위</div></div>
+      <div class="metric"><div class="v">+0.0465</div><div class="k">WBF 앙상블 mAP50 (vs NMS)</div></div>
+      <div class="metric"><div class="v">팀장</div><div class="k">기획 · 일정 · 업무 분배 총괄</div></div>
+    </div>
+    <div class="role-line"><b>담당 역할</b> — 프로젝트 총괄 기획 · Co-DeTR 모델 학습 · WBF 앙상블</div>
+    <div class="block">
+      <h4>주요 기여</h4>
+      <ul>
+        <li><strong>모델 선정(Co-DeTR, Swin-L Backbone)</strong> — 팀원들이 다양한 모델을 학습·비교·앙상블해야 하는 상황에서, 코드 응집도와 재사용성을 위해 MMDetection을 팀 공통 기반으로 채택했습니다. Co-DeTR은 무겁지만 Gradient Accumulation으로 GPU RAM과 대회 기간을 모두 만족할 수 있다고 판단했고, 특히 BatchNorm 대신 <strong>LayerNorm을 사용해 작은 Batch에서도 Accumulation으로 큰 Batch와 유사한 효과</strong>를 낼 수 있다는 점을 근거로 선정했습니다.</li>
+        <li><strong>과적합 검증 기반 파인튜닝 전략</strong> — COCO와 Label이 다른 Decoder는 전체 재학습하되, Backbone 전체 재학습은 과적합을 유발한다는 가설을 실험으로 검증했습니다. 학습 데이터에서는 전체 학습이 mAP50 <span class="num">+0.05</span> 높았지만 검증 데이터에서는 마지막 Layer만 학습한 모델이 <span class="num">+0.03</span> 높아, <strong>Backbone 마지막 Layer만 학습</strong>하는 전략을 채택했습니다.</li>
+        <li><strong>WBF(Weighted Box Fusion) 앙상블</strong> — 박스를 제거하는 NMS와 달리 신뢰도·위치·크기를 종합해 새 박스를 생성하는 WBF가 더 안정적일 것으로 가설을 세웠고, 검증 데이터에서 mAP50 <span class="num">+0.0465</span>를 확인해 최종 채택했습니다. EDA 결과를 바탕으로 모델·클래스별 가중치를 부여하고, IoU Threshold는 Grid Search로 최적화했습니다.</li>
+        <li><strong>팀 리딩</strong> — 약 8일의 짧은 대회 기간 내 완주를 위해 업무별 시한을 배정하고, 병목 방지를 위해 초기 모델 세팅에 인원을 집중 배치했습니다. Wandb로 실험을 관리하고 Notion에 결과를 정리해 앙상블 의사결정의 근거로 활용했습니다.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- P3. Segmentation -->
+  <article class="proj bbox" data-cls="segmentation">
+    <span class="tag"><span class="dot"></span>cls: segmentation</span>
+    <h3>Hand Bone Image Segmentation</h3>
+    <div class="meta">
+      <span>부스트캠프 AI Tech 8기</span>
+      <span>5인 팀</span>
+      <a href="https://github.com/ehekafhr/pro-cv-semanticsegmentation-cv-10">GitHub ↗</a>
+    </div>
+    <p class="overview">
+      손 X-ray 영상(2048×2048)에서 <strong>29개 손뼈 클래스</strong>를 각각 Segmentation하는 프로젝트입니다. 뼈가 겹치는 영역은 여러 클래스로 동시에 라벨링해야 하는 multi-label 문제이며, 평가지표는 클래스 평균 Dice(mDice)입니다. (Train 800장 / Test 288장)
+    </p>
+    <div class="metrics">
+      <div class="metric"><div class="v">0.9759</div><div class="k">최종 앙상블 Dice</div></div>
+      <div class="metric"><div class="v">29 classes</div><div class="k">SAM-2 Decoder 다중 마스크 개조</div></div>
+    </div>
+    <div class="role-line"><b>담당 역할</b> — 모델 실험(SAM-2) · 앙상블 설계</div>
+    <div class="block">
+      <h4>주요 기여</h4>
+      <ul>
+        <li><strong>SAM-2 선정 및 구조 수정</strong> — 이미지 외에 프롬프트를 입력받아 추가 정보를 주입할 수 있다는 점에서 SAM-2를 선정했고, 픽셀당 하나의 클래스만 출력하는 Decoder를 <strong>29개 클래스별 마스크를 동시 출력</strong>하도록 개조했습니다.</li>
+        <li><strong>프롬프트 생성기 도입으로 학습 안정화</strong> — 메타데이터의 직접 입력이나 뼈 이름 텍스트 프롬프트(finger-1, finger-2 등)는 인코더가 구분하기 어렵다고 판단했습니다. 프롬프트 없이 학습하면 초기 학습이 불안정해지는 문제를, <strong>각 뼈의 중심점 좌표를 출력하는 프롬프트 생성기를 별도 학습</strong>해 프롬프트 인코더에 연결하는 방식으로 해결했습니다.</li>
+        <li><strong>고해상도 입력 처리</strong> — 모델 크기로 인해 원본 해상도를 직접 학습할 수 없어 축소 입력 후 원본 크기로 복원하는 파이프라인을 구성했고, 크기 조정에는 Bilinear 대비 고품질인 <strong>Bicubic 보간</strong>을 사용했습니다. 추가 연산량은 무거운 모델 학습 대비 미미해 전체 학습 속도에 영향이 없다고 판단했습니다.</li>
+        <li><strong>Dice loss 역수 기반 Weighted Ensemble</strong> — validation Dice를 그대로 가중치로 쓰면 모델 간 점수 차가 작아 단순 평균과 다를 바 없었고, 지수항만으로는 계산이 불안정해지는 10 이상의 지수가 필요했습니다. 이를 <strong>(1/(1−Dice))<sup>power</sup> 형태의 Dice loss 역수 가중치</strong>로 해결해 모델·클래스별 성능 차이의 영향력을 키웠고, power 5~10 구간에서 최고 성능 <span class="num">Dice 0.9759</span>를 달성했습니다.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- P4. RL -->
+  <article class="proj bbox" data-cls="reinforcement">
+    <span class="tag"><span class="dot"></span>cls: reinforcement_learning</span>
+    <h3>Gradual Restriction with SC2</h3>
+    <div class="meta">
+      <span>DGIST 학부 강화학습 팀 프로젝트</span>
+      <a href="https://github.com/ehekafhr/TStarBot1">GitHub ↗</a>
+    </div>
+    <p class="overview">
+      강화학습 에이전트를 다른 환경으로 전환할 때, <strong>환경 변화를 점진적으로 적용하며 파인튜닝하는 방식의 효과를 검증</strong>한 프로젝트입니다. 스타크래프트 2(Tencent TStarBot1 기반 macro-action 환경, PPO)를 기본 환경으로, APM(분당 액션 수)이 일정 값을 넘으면 제약을 부여하는 환경을 전환 대상으로 설정했습니다.
+    </p>
+    <div class="metrics">
+      <div class="metric"><div class="v">+25% / +10%</div><div class="k">점진적 전환 시 승률 향상 (하수 / 고수 상대)</div></div>
+      <div class="metric"><div class="v">TF 2.8</div><div class="k">레거시 코드 마이그레이션</div></div>
+    </div>
+    <div class="role-line"><b>담당 역할</b> — APM 제약 환경 설계 · 학습 실험 설계 · 코드 현대화</div>
+    <div class="block">
+      <h4>주요 기여</h4>
+      <ul>
+        <li><strong>APM 제약 환경 설계</strong> — 전략이 아닌 비인간적 실행 속도로 이기지 않도록 행동 횟수를 제한하는 reward function을 수정했습니다. 높은 APM에 페널티만 부여하면 중요한 순간에는 여전히 극단적 APM을 사용하는 문제가 있어, <strong>순간적으로 높은 APM 사용 시 즉시 Action이 불가능해지는 강한 제약</strong>을 적용했습니다.</li>
+        <li><strong>점진적 환경 전환 실험</strong> — 변경 환경을 즉시 전부 적용하는 파인튜닝과 점진적으로 변화시키는 학습을 비교했습니다. 급격한 변화는 기존 정책이 적응하지 못하고 점진적 변화는 단계적 적응을 가능하게 한다는 가설을 세웠고, 실험 결과 점진적 방식이 승률 <span class="num">+25%</span>(낮은 실력 상대) / <span class="num">+10%</span>(높은 실력 상대) 향상을 보여 가설을 검증했습니다.</li>
+        <li><strong>레거시 코드 현대화</strong> — 구버전 TensorFlow 기반 TStarBot1 코드를 TensorFlow 2.8에서 동작하도록 마이그레이션했습니다.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="wrap" id="education">
+  <div class="sec-head"><h2>교육</h2><span class="cnt"></span></div>
+  <ul class="edu">
+    <li>
+      <span class="when">2025.08 — 2026.02</span>
+      <span class="what">네이버 부스트캠프 AI Tech 8기</span>
+      <span class="note">Computer Vision 트랙 수료</span>
+    </li>
+    <li>
+      <span class="when"><span class="placeholder">2019.02 — 2024.02</span></span>
+      <span class="what">DGIST 학사</span>
+      <span class="note"><span class="placeholder">기초학부(컴퓨터공학 전공인증)</span></span>
+    </li>
+  </ul>
+</section>
+
+
+</body>
+</html>
