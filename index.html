@@ -183,8 +183,8 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
       <span>학력&nbsp;·&nbsp;DGIST <span class="placeholder">기초학부(컴퓨터공학 전공인증)</span></span>
     </div>
     <div class="intro">
-      <p>문제 상황과 데이터 특성을 먼저 이해하고, 그에 맞는 베이스 모델을 선정한 뒤 <strong>과적합을 통제하며 도메인에 맞게 파인튜닝</strong>하는 과정을 즐깁니다. "왜 이 모델인가, 왜 이 학습 전략인가"에 대해 가설을 세우고, 실험으로 검증하여 의사결정하는 것을 원칙으로 합니다.</p>
-      <p>컴퓨터 비전(Object Detection · Segmentation)에 대한 깊은 이해를 바탕으로, 모델을 서버·DB와 연결해 <strong>동작하는 시스템으로 완성</strong>한 경험이 있으며, 강화학습 에이전트와 NLP 모델의 파인튜닝도 가능합니다.</p>
+      <p>문제 상황과 데이터 특성을 먼저 이해하고, 그에 맞는 베이스 모델을 선정한 뒤 과적합을 통제하며 도메인에 맞게 파인튜닝하는 과정을 즐깁니다. "왜 이 모델인가, 왜 이 학습 전략인가"에 대해 가설을 세우고, 실험으로 검증하여 의사결정하는 것을 원칙으로 합니다.</p>
+      <p>컴퓨터 비전(Object Detection · Segmentation)에 대한 깊은 이해를 바탕으로, 모델을 서버·DB와 연결해 동작하는 시스템으로 완성한 경험이 있으며, 강화학습 에이전트와 NLP 모델의 파인튜닝도 가능합니다.</p>
     </div>
   </div>
 </header>
@@ -218,7 +218,7 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
       <a href="https://www.youtube.com/watch?v=n9__Jga_j58">시연 영상 ↗</a>
     </div>
     <p class="overview">
-      군 경계 지역 CCTV의 화질 열화(해무·안개 등)를 엣지 디바이스에서 실시간 복원하고, 객체 탐지 → HyperCLOVA X 기반 보고서 생성까지 이어지는 파이프라인을 구축해 <strong>군 경계 감시 업무의 자동화</strong>를 지향한 프로젝트입니다. 엣지 디바이스(Jetson Orin Nano / Google Coral) — 메인 서버 — 웹 서버로 구성된 End-to-End 시스템을 완성했습니다.
+      군 경계 지역 CCTV의 화질 열화(해무·안개 등)를 엣지 디바이스에서 실시간 복원하고, 객체 탐지 → HyperCLOVA X 기반 보고서 생성까지 이어지는 파이프라인을 구축해 군 경계 감시 업무의 자동화를 지향한 프로젝트입니다. 엣지 디바이스(Jetson Orin Nano / Google Coral) — 메인 서버 — 웹 서버로 구성된 End-to-End 시스템을 완성했습니다.
     </p>
     <div class="metrics">
       <div class="metric"><div class="v">0.313 → 0.390</div><div class="k">복원 적용 후 탐지 mAP50 (팀 성과)</div></div>
@@ -238,7 +238,7 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
     <div class="block">
       <h4>시스템 개요 (팀)</h4>
       <ul>w
-        <li>BioIR(Teacher) → OneRestore(Student, 약 598만 파라미터) <strong>feature 기반 지식 증류</strong>로 경량 복원 모델을 만들고 TensorRT로 엣지 배포 — 복원 적용 시 YOLOv8n 탐지 mAP50이 <span class="num">0.313 → 0.390</span>으로 향상되었습니다.</li>
+        <li>BioIR(Teacher) → OneRestore(Student, 약 598만 파라미터) feature 기반 지식 증류로 경량 복원 모델을 만들고 TensorRT로 엣지 배포 — 복원 적용 시 YOLOv8n 탐지 mAP50이 <span class="num">0.313 → 0.390</span>으로 향상되었습니다.</li>
         <li>React 웹에서 실시간 객체 식별 알림, AI 보고서, 과거 감시 기록 열람을 제공합니다.</li>
       </ul>
     </div>
@@ -265,8 +265,8 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
     <div class="block">
       <h4>주요 기여</h4>
       <ul>
-        <li><strong>모델 선정(Co-DeTR, Swin-L Backbone)</strong> — 팀원들이 다양한 모델을 학습·비교·앙상블해야 하는 상황에서, 코드 응집도와 재사용성을 위해 MMDetection을 팀 공통 기반으로 채택했습니다. Co-DeTR은 무겁지만 Gradient Accumulation으로 GPU RAM과 대회 기간을 모두 만족할 수 있다고 판단했고, 특히 BatchNorm 대신 <strong>LayerNorm을 사용해 작은 Batch에서도 Accumulation으로 큰 Batch와 유사한 효과</strong>를 낼 수 있다는 점을 근거로 선정했습니다.</li>
-        <li><strong>과적합 검증 기반 파인튜닝 전략</strong> — COCO와 Label이 다른 Decoder는 전체 재학습하되, Backbone 전체 재학습은 과적합을 유발한다는 가설을 실험으로 검증했습니다. 학습 데이터에서는 전체 학습이 mAP50 <span class="num">+0.05</span> 높았지만 검증 데이터에서는 마지막 Layer만 학습한 모델이 <span class="num">+0.03</span> 높아, <strong>Backbone 마지막 Layer만 학습</strong>하는 전략을 채택했습니다.</li>
+        <li><strong>모델 선정(Co-DeTR, Swin-L Backbone)</strong> — 팀원들이 다양한 모델을 학습·비교·앙상블해야 하는 상황에서, 코드 응집도와 재사용성을 위해 MMDetection을 팀 공통 기반으로 채택했습니다. Co-DeTR은 무겁지만 Gradient Accumulation으로 GPU RAM과 대회 기간을 모두 만족할 수 있다고 판단했고, 특히 BatchNorm 대신 LayerNorm을 사용한 것을 확인하여 작은 Batch에서도 Accumulation으로 큰 Batch와 유사한 효과를 낼 수 있다는 점을 근거로 선정했습니다.</li>
+        <li><strong>과적합 검증 기반 파인튜닝 전략</strong> — COCO와 Label이 다른 Decoder는 전체 재학습하되, Backbone 전체 재학습은 과적합을 유발한다는 가설을 실험으로 검증했습니다. 학습 데이터에서는 전체 학습이 mAP50 <span class="num">+0.05</span> 높았지만 검증 데이터에서는 마지막 Layer만 학습한 모델이 <span class="num">+0.03</span> 높아, Backbone 마지막 Layer만 학습하는 전략을 채택했습니다.</li>
         <li><strong>WBF(Weighted Box Fusion) 앙상블</strong> — 박스를 제거하는 NMS와 달리 신뢰도·위치·크기를 종합해 새 박스를 생성하는 WBF가 더 안정적일 것으로 가설을 세웠고, 검증 데이터에서 mAP50 <span class="num">+0.0465</span>를 확인해 최종 채택했습니다. EDA 결과를 바탕으로 모델·클래스별 가중치를 부여하고, IoU Threshold는 Grid Search로 최적화했습니다.</li>
         <li><strong>팀 리딩</strong> — 약 8일의 짧은 대회 기간 내 완주를 위해 업무별 시한을 배정하고, 병목 방지를 위해 초기 모델 세팅에 인원을 집중 배치했습니다. Wandb로 실험을 관리하고 Notion에 결과를 정리해 앙상블 의사결정의 근거로 활용했습니다.</li>
       </ul>
@@ -283,7 +283,7 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
       <a href="https://github.com/ehekafhr/pro-cv-semanticsegmentation-cv-10">GitHub ↗</a>
     </div>
     <p class="overview">
-      손 X-ray 영상(2048×2048)에서 <strong>29개 손뼈 클래스</strong>를 각각 Segmentation하는 프로젝트입니다. 뼈가 겹치는 영역은 여러 클래스로 동시에 라벨링해야 하는 multi-label 문제이며, 평가지표는 클래스 평균 Dice(mDice)입니다. (Train 800장 / Test 288장)
+      손 X-ray 영상(2048×2048)에서 29개 손뼈 클래스를 각각 Segmentation하는 프로젝트입니다. 뼈가 겹치는 영역은 여러 클래스로 동시에 라벨링해야 하는 multi-label 문제이며, 평가지표는 클래스 평균 Dice(mDice)입니다. (Train 800장 / Test 288장)
     </p>
     <div class="metrics">
       <div class="metric"><div class="v">0.9759</div><div class="k">최종 앙상블 Dice</div></div>
@@ -310,7 +310,7 @@ footer{padding:48px 0 72px;text-align:center;font-family:var(--mono);font-size:1
       <a href="https://github.com/ehekafhr/TStarBot1">GitHub ↗</a>
     </div>
     <p class="overview">
-      강화학습 에이전트를 다른 환경으로 전환할 때, <strong>환경 변화를 점진적으로 적용하며 파인튜닝하는 방식의 효과를 검증</strong>한 프로젝트입니다. 스타크래프트 2(Tencent TStarBot1 기반 macro-action 환경, PPO)를 기본 환경으로, APM(분당 액션 수)이 일정 값을 넘으면 제약을 부여하는 환경을 전환 대상으로 설정했습니다.
+      강화학습 에이전트를 다른 환경으로 전환할 때, 환경 변화를 점진적으로 적용하며 파인튜닝하는 방식의 효과를 검증한 프로젝트입니다. 스타크래프트 2(Tencent TStarBot1 기반 macro-action 환경, PPO)를 기본 환경으로, APM(분당 액션 수)이 일정 값을 넘으면 제약을 부여하는 환경을 전환 대상으로 설정했습니다.
     </p>
     <div class="metrics">
       <div class="metric"><div class="v">+25% / +10%</div><div class="k">점진적 전환 시 승률 향상 (하수 / 고수 상대)</div></div>
